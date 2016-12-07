@@ -2,7 +2,7 @@
 
 ## JS (ES6) implementation of Cracking the Coding Interview 6th Edition
 ### Checklist
-- [] ES6 class implementations of general data structures
-- [] import solutions to problems
-- [] mocha chai testing
+* ES6 class implementations of general data structures (WIP)
+* import solutions to problems (WIP)
+* mocha chai testing
 
