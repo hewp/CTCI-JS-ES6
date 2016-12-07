@@ -1,4 +1,4 @@
-# Cracking-Code-JS-e6
+# Cracking-Code-JS-ES6
 
 ## JS (ES6) implementation of Cracking the Coding Interview 6th Edition
 ### Checklist
