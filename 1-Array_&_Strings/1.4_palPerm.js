@@ -34,14 +34,32 @@ let isPermutationOfPalindrome = (str) => {
 // solution 2
 // bit vector
 
+let toggle = (bitVector, index) => {
+  let mask = 1 << index;
+  if ((bitVector & mask) === 0) {
+    bitVector |= mask;
+  } else {
+    bitVector &= ~mask;
+  }
+
+  return bitVector;
+}
+
 let createBitVector = (str) => {
   let bitVector = 0;
   for(let i = 0; i < str.length; i++) {
-    let 
+    let x = str.charCodeAt(i) - 97;
+    bitVector = toggle(bitVector, x);
   }
+  return bitVector;
+}
+
+let checkExactlyOneBitSet = (bitVector) => {
+  return (bitVector & (bitVector - 1)) === 0;
 }
 
 let isPermutationOfPalindrome = (str) => {
   let string = str.toLowerCase();
-  let bitVector =
+  let bitVector = createBitVector(string);
+  return bitVector === 0 || checkExactlyOneBitSet(bitVector);
 }
