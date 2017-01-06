@@ -107,3 +107,5 @@ class List {
     previous.next = newNode;
   }
 }
+
+export default class List;
